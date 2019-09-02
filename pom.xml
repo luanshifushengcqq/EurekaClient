@@ -9,7 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>eurekaClient-deploy</module>
+        <module>eureka-client-deploy</module>
+        <module>eureka-client-common</module>
+        <module>eureka-client-controller</module>
+        <module>eureka-client-dal</module>
+        <module>eureka-client-services</module>
     </modules>
     <properties>
         <spring-cloud.version>1.0.4</spring-cloud.version>
@@ -54,12 +58,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -94,6 +92,11 @@
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
             <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+            <version>3.0.0.M1</version>
         </dependency>
 
     </dependencies>
